@@ -1,0 +1,52 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h1 class="h2">Analytics Covid-19</h1>
+  <form>
+    <div class="form-row d-flex justify-content-between">
+
+      <div class="col-md-4">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+          </div>
+          <input type="text"
+           name="dateInit"
+           placeholder="Date from"
+           class="form-control"
+           >
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+          </div>
+          <input type="text"
+           name="dateEnd"
+           placeholder="Date to"
+           class="form-control"
+           >
+        </div>
+      </div>
+       <div class="col-md-4">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                  <i class="fas fa-globe"></i>
+              </div>
+            </div>
+            <select class="form-control" name="country">
+              <option>Opt1</option>
+              <option>Opt2</option>
+              <option>Opt3</option>
+            </select>
+          </div>
+        </div>
+    </div>
+  </form>
+</div>
+
+<canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
