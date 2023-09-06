@@ -1,6 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+// datepicker
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { defineLocale } from 'ngx-bootstrap/chronos';
+import { ruLocale } from 'ngx-bootstrap/locale';
+defineLocale('ru', ruLocale);
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -8,6 +15,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { BottomComponent } from './bottom/bottom.component';
 import { FooterComponent } from './footer/footer.component';
+import { PieComponent } from './pie/pie.component';
+import { DonutComponent } from './donut/donut.component';
+import { BarComponent } from './bar/bar.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +26,16 @@ import { FooterComponent } from './footer/footer.component';
     SidebarComponent,
     PrincipalComponent,
     BottomComponent,
-    FooterComponent
+    FooterComponent,
+    PieComponent,
+    DonutComponent,
+    BarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    BsDatepickerModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

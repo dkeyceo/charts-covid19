@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BsLocaleService } from 'ngx-bootstrap/datepicker';
 
 @Component({
   selector: 'app-principal',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./principal.component.css']
 })
 export class PrincipalComponent {
+  locale = 'ru';
 
+  constructor( private localeService: BsLocaleService) {
+    this.localeService.use(this.locale);
+  }
 }
