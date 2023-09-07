@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PieComponent } from './pie/pie.component';
 import { DonutComponent } from './donut/donut.component';
 import { BarComponent } from './bar/bar.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { BarComponent } from './bar/bar.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,24 @@
-<p>pie works!</p>
+<div>
+  <div class="card">
+      <div class="card-header">
+          <div class="input-group">
+              <div class="input-group-prepend">
+                  <div class="input-group-text">
+                      <i class="fas fa-globe"></i>
+                  </div>
+              </div>
+              <select class="form-control">
+                  <option>Opt1</option>
+                  <option>Opt2</option>
+                  <option>Opt3</option>
+                </select>
+
+          </div>
+      </div>
+      <div class="card-body">
+          <canvas baseChart type="pie"
+          [data]="pieChartData">
+        </canvas>
+      </div>
+  </div>
+</div>
