@@ -35,6 +35,7 @@
            >
         </div>
       </div>
+
        <div class="col-md-4">
           <div class="input-group">
             <div class="input-group-prepend">
@@ -43,9 +44,8 @@
               </div>
             </div>
             <select class="form-control" name="country">
-              <option>Opt1</option>
-              <option>Opt2</option>
-              <option>Opt3</option>
+              <option value="">Choose country</option>
+              <option *ngFor="let country of countries" [ngValue]="country">{{country}}</option>
             </select>
           </div>
         </div>

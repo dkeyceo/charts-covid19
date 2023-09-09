@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 // datepicker
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { defineLocale } from 'ngx-bootstrap/chronos';
 import { ruLocale } from 'ngx-bootstrap/locale';
+
 defineLocale('ru', ruLocale);
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,6 +21,7 @@ import { PieComponent } from './pie/pie.component';
 import { DonutComponent } from './donut/donut.component';
 import { BarComponent } from './bar/bar.component';
 import { NgChartsModule } from 'ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +40,9 @@ import { NgChartsModule } from 'ng2-charts';
     AppRoutingModule,
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
-    NgChartsModule
+    NgChartsModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
